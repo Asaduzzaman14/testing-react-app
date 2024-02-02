@@ -58,7 +58,7 @@ const User = () => {
         <label htmlFor='name'>Name</label>
         <input
           type='text'
-          value={name}
+          value={'me'}
           onChange={handleNameChange}
           id='name'
           placeholder='User name'
