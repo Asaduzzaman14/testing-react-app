@@ -33,7 +33,11 @@ it('should be render the component', () => {
   const textId = screen.getByTestId('paragraph');
 
 
+  const button = screen.queryByRole('button', {
+    name: 'edit'
+  });
 
+  expect(button).not.toBeInTheDocument();
 
   expect(element2).toBeInTheDocument();
   expect(element).toBeInTheDocument();
@@ -44,3 +48,4 @@ it('should be render the component', () => {
   expect(textId).toBeInTheDocument();
 
 });
+
