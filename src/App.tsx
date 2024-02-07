@@ -1,5 +1,6 @@
 import './App.css';
 import PrimaryButton from './components/PrimaryButton';
+import UserEvent from './components/UserEvent/UserEvent';
 import UserTable from './components/UsersTable/UsersTable';
 import FruitList from './components/fullList/fruitList';
 import User from './components/user/User';
@@ -53,7 +54,8 @@ function App() {
          {/* <User /> */}
          {/* <FruitList fruits={fruits} /> */}
 
-         <UserTable users={users} />
+         {/* <UserTable users={users} /> */}
+         <UserEvent />
       </div>
    );
 }
